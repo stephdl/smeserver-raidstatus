@@ -1,0 +1,73 @@
+<lexicon lang="fr">
+    <!-- vim: ft=xml:
+    -->
+    <entry>
+        <base>Administration</base>
+        <trans>Administration</trans>
+    </entry>
+    <entry>
+        <base>Raid Status</base>
+        <trans>Statut du Raid</trans>
+    </entry>
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>Statut du Raid</trans>
+    </entry>
+
+    <entry>
+        <base>STATUS</base>
+        <trans>Etats</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTION_RAIDSTATUS</base>
+        <trans>Ici vous pouvez voir l'état de votre Raid.</trans>
+    </entry>
+
+    <entry>
+        <base>RAID</base>
+        <trans>Nom du Raid</trans>
+    </entry>
+
+    <entry>
+        <base>DEVICECOUNT</base>
+        <trans>Nombre de disques.</trans>
+    </entry>
+
+    <entry>
+        <base>ACTIVEDEVICES</base>
+        <trans>Disques actifs.</trans>
+    </entry>
+
+    <entry>
+        <base>FAILDDEVICES</base>
+        <trans>Disques en défauts.</trans>
+    </entry>
+
+    <entry>
+        <base>SPAREDEVICES</base>
+        <trans>Disques de secours.</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONGREEN</base>
+        <trans>Le raid est fonctionnel.</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONORANGE</base>
+        <trans>Le RAID se synchronise ou vous avez installé la SME Server sur un seul disque.</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONRED</base>
+        <trans>Votre raid est désynchronisé, vérifiez quel disque est en défaut et essayez de l'ajouter à nouveau.</trans>
+    </entry>
+
+    <entry>
+        <base>NORAID</base>
+        <trans>Vous n'avez pas de raid logiciel.</trans>
+    </entry>
+
+
+</lexicon>

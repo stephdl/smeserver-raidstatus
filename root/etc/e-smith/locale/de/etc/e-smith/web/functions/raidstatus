@@ -1,0 +1,66 @@
+<lexicon lang="de">
+    <!-- vim: ft=xml:
+    -->
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>Raidstatus</trans>
+    </entry>
+
+    <entry>
+        <base>STATUS</base>
+        <trans>Status</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTION_RAIDSTATUS</base>
+        <trans>Hier sehen Sie den Zustand Ihres Raidverbund.</trans>
+    </entry>
+
+    <entry>
+        <base>RAID</base>
+        <trans>Raid Name</trans>
+    </entry>
+
+    <entry>
+        <base>DEVICECOUNT</base>
+        <trans>Anzahl der Festplatten</trans>
+    </entry>
+
+    <entry>
+        <base>ACTIVEDEVICES</base>
+        <trans>Aktive Festplatten</trans>
+    </entry>
+
+    <entry>
+        <base>FAILDDEVICES</base>
+        <trans>Defekte Festplatten</trans>
+    </entry>
+
+    <entry>
+        <base>SPAREDEVICES</base>
+        <trans>Ersatz Festplatten</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONGREEN</base>
+        <trans>Der Raid Verbund ist in Ordnung.</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONORANGE</base>
+        <trans>Entweder findet derzeit ein Wiederherstellung statt, oder eine Festplatte ist nicht Mitglied des Raidverbund</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONRED</base>
+        <trans>Sie haben einen fehlerhaften Raid Verbund, tauschen Sie die defekte Festplatte aus.</trans>
+    </entry>
+
+    <entry>
+        <base>NORAID</base>
+        <trans>Sie haben kein Raid konfiguriert.</trans>
+    </entry>
+
+
+</lexicon>

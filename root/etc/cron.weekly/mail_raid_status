@@ -1,0 +1,13 @@
+#!/usr/bin/perl -w
+
+use strict;
+use warnings;
+use esmith::ConfigDB;
+
+my $DB = esmith::ConfigDB->open_ro;
+my $Domainname = $DB->get_value('DomainName');
+my $mail = $DB->get_prop('raidstatus','mailto') || 'admin@'.$Domainname;
+my $systemname = $DB->get_value('SystemName');
+
+my $MailStatus = `/sbin/mdadm --detail  \$(/bin/ls /dev/md*)|/bin/mail -s "RAID status of $systemname.$Domainname" $mail`;
+

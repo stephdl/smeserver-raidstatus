@@ -1,0 +1,66 @@
+<lexicon lang="en-us">
+    <!-- vim: ft=xml:
+    -->
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>Raidstatus</trans>
+    </entry>
+
+    <entry>
+        <base>STATUS</base>
+        <trans>State</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTION_RAIDSTATUS</base>
+        <trans>Here you can see your Raid state.</trans>
+    </entry>
+
+    <entry>
+        <base>RAID</base>
+        <trans>Raid Name</trans>
+    </entry>
+
+    <entry>
+        <base>DEVICECOUNT</base>
+        <trans>Device count</trans>
+    </entry>
+
+    <entry>
+        <base>ACTIVEDEVICES</base>
+        <trans>Active Device</trans>
+    </entry>
+
+    <entry>
+        <base>FAILDDEVICES</base>
+        <trans>Faild Device</trans>
+    </entry>
+
+    <entry>
+        <base>SPAREDEVICES</base>
+        <trans>Spare Device</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONGREEN</base>
+        <trans>The Raid is ok.</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONORANGE</base>
+        <trans>A Raid array is synchronizing or you have installed SME Server on a single drive</trans>
+    </entry>
+
+    <entry>
+        <base>DESCRIPTIONRED</base>
+        <trans>You have a desynchronized raid, please check which drive is failed and if possible try to add it again</trans>
+    </entry>
+
+    <entry>
+        <base>NORAID</base>
+        <trans>You have no raid.</trans>
+    </entry>
+
+
+</lexicon>
