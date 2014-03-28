@@ -10,10 +10,10 @@ Group: Administration
 Source: %{name}-%{version}.tar.gz
 Packager: Walter Thoss <Support@swt-online.de>
 BuildRoot: /var/tmp/e-smith-buildroot
-BuildRequires: e-smith-release >= 8.0
+BuildRequires: e-smith-devtools
 BuildArchitectures: noarch
 AutoReqProv: no
-Patch0: smeserver-raidstatus-0.1-add_weekly_mail_status.patch
+
 %changelog
 * Sat Mar 15 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.1.8
 - a great big thank to walter who have made the new design and corrected a bug i made
