@@ -28,7 +28,6 @@ Display raid status in server-manager
 
 %prep
 %setup
-%patch0 -p1
 
 %build
 perl createlinks
