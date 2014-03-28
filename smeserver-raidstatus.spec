@@ -4,7 +4,7 @@ Name: %{name}
 %define version 0.1
 %define release 8
 Version: %{version}
-Release: %{release}
+Release: %{release}%{?dist}
 License: SWT
 Group: Administration
 Source: %{name}-%{version}.tar.gz
