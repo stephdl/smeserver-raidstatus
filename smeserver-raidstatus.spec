@@ -12,7 +12,6 @@ Packager: Walter Thoss <Support@swt-online.de>
 BuildRoot: /var/tmp/e-smith-buildroot
 BuildRequires: e-smith-devtools
 BuildArchitectures: noarch
-Requires: e-smith-release >= 9.0
 AutoReqProv: no
 
 %changelog
