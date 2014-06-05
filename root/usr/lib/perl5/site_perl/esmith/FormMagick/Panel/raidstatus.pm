@@ -61,12 +61,13 @@ sub print_raidstatus {
 			my @array = split(/ /);
 			for $_ (@array) {
 				next if ! /(\w+)\[\d+\](\(.\))*/;
+                if (defined $2){
 				if ($2 eq "(F)") {
 					$failed_devs{$dev} .= "$1,";
 				}
 				elsif ($2 eq "(S)") {
 					$spare_devs{$dev} .= "$1,";
-				}
+				}}
 				else {
 					$active_devs{$dev} .= "$1,";
 				}
