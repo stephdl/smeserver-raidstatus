@@ -11,20 +11,35 @@ use File::Basename;
 use Exporter;
 use Carp qw(verbose);
 use Getopt::Long;
+use esmith::ConfigDB;
 
 our @ISA = qw(esmith::FormMagick Exporter);
 our @EXPORT = qw(
-              get_prop
               apply
               );
 
 our $configdb = esmith::ConfigDB->open(); 
 
+sub new {
+shift;
+my $self = esmith::FormMagick->new();
+$self->{calling_package} = (caller)[0];
+bless $self;
+return $self;
+}
+
+
 sub print_raidstatus {
 
     	my $self = shift;
     	my $q = $self->{cgi};
-    
+    ##we start to read the raidstatus key to retrieve properties 
+        my $rec = $configdb->get('raidstatus');
+         if ($rec) {
+            $q->param(-name=>'mailto',-value=>
+                 $rec->prop('mailto'));
+          }
+
     	print "  <tr>\n    <td>\n      ";
 	print $q->start_table ({-CLASS => "sme-border", width=>"700"});
     	print $q->Tr(
@@ -174,15 +189,14 @@ sub print_raidstatus {
 	}
 	return "";
 }
-   sub get_prop{
-   my ($fm, $prop, $default) = @_;
-   return $configdb->get_prop("raidstatus", $prop) || $default;
-   }
-sub apply {
-my ($self) = @_;
-my $q = $self->{cgi};
-$configdb->set_prop('raidstatus', 'mailto', $q->param("mailto"));
 
- return $self->success('SUCCESS','First');
-}
+    ##this routine is to save the properties
+    sub apply {
+       my ($self) = @_;
+       my $q = $self->{cgi};
+       $configdb->set_prop('raidstatus', 'mailto', $q->param("mailto"));
+       
+       return $self->success('SUCCESS','First');
+   } 
 1;
+
