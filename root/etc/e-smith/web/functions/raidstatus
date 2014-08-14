@@ -26,17 +26,12 @@ __DATA__
 		<description>DESCRIPTION_RAIDSTATUS</description>
         	<subroutine src="print_raidstatus()" />
 
-             <field type="text" id="mailto">
+             <field type="text" id="mailto" size="80">
                 <label>MAILTO</label>
              value="get_prop('mailto')">
              <description>DESC_MAILTO</description>
               <label>MAILTO</label>
               </field>
-
-             <field type="literal" id="mailtodesc"
-                    value="">
-                <description>DESC_MAILTO</description>
-             </field>
 
  <subroutine src="print_button('SAVE')" />
 	</page>
