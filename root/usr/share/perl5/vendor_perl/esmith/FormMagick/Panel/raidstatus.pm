@@ -17,7 +17,9 @@ our @EXPORT = qw(
               get_prop
               apply
               );
- 
+
+our $configdb = esmith::ConfigDB->open(); 
+
 sub print_raidstatus {
 
     	my $self = shift;
