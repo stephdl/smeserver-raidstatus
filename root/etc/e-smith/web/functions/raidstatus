@@ -22,9 +22,24 @@ __DATA__
         header="/etc/e-smith/web/common/head.tmpl"
 	footer="/etc/e-smith/web/common/foot.tmpl">
  	
-	<page name="First" pre-event="print_status_message()">
+	<page name="First" pre-event="print_status_message()"   post-event="apply()">
 		<description>DESCRIPTION_RAIDSTATUS</description>
         	<subroutine src="print_raidstatus()" />
+
+             <field type="text" id="mailto">
+                <label>MAILTO</label>
+             value="get_prop('mailto')">
+             <description>DESC_MAILTO</description>
+              <label>MAILTO</label>
+              </field>
+
+             <field type="literal" id="mailtodesc"
+                    value="">
+                <description>DESC_MAILTO</description>
+             </field>
+
+ <subroutine src="print_button('SAVE')" />
 	</page>
+
 </form>
 

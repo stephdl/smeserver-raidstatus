@@ -13,7 +13,10 @@ use Carp qw(verbose);
 use Getopt::Long;
 
 our @ISA = qw(esmith::FormMagick Exporter);
-our @EXPORT = qw();
+our @EXPORT = qw(
+              get_prop
+              apply
+              );
  
 sub print_raidstatus {
 
@@ -167,5 +170,16 @@ sub print_raidstatus {
 		print $q->end_table;
 	}
 	return "";
+}
+   sub get_prop{
+   my ($fm, $prop, $default) = @_;
+   return $configdb->get_prop("raidstatus", $prop) || $default;
+   }
+sub apply {
+my ($self) = @_;
+my $q = $self->{cgi};
+$configdb->set_prop('raidstatus', 'mailto', $q->param("mailto"));
+
+ return $self->success('SUCCESS','First');
 }
 1;
