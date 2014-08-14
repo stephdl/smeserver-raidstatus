@@ -67,7 +67,7 @@
     </entry>
         <entry>
         <base>DESC_MAILTO</base>
-        <trans>A weekly email of the status of the raid is sent to the server administrator, you can add here other recipients (separate emails with a space). </trans>
+        <trans>A weekly email of the raid status is sent to the server administrator, you can add here other recipients (separate emails with a space). </trans>
     </entry>
 
 </lexicon>
