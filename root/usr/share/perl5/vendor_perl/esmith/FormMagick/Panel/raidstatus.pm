@@ -164,6 +164,7 @@ sub print_raidstatus {
 			$q->td({class=>"sme-border"}, $self->localise('DESCRIPTIONRED')),
 			);
 		print $q->end_table;
+                print "<br><br>\n";
 
 	}
 	else 		
