@@ -6,10 +6,9 @@ use esmith::ConfigDB;
 
 my $DB = esmith::ConfigDB->open_ro;
 my $Domainname = $DB->get_value('DomainName');
-#my $mail = $DB->get_prop('raidstatus','mailto') || 'admin@'.$Domainname;
 my $mail = $DB->get_prop('raidstatus','mailto') || '';
 
 my $systemname = $DB->get_value('SystemName');
-#$mail = 'admin@'.$Domainname if ($mail eq '');
-my $MailStatus = `/sbin/mdadm --detail  \$(/bin/ls /dev/md?)|/bin/mail -s "RAID status of $systemname.$Domainname" 'admin@'.$Domainname $mail`;
+$mail = $mail . ' admin@'.$Domainname;
+my $MailStatus = `/sbin/mdadm --detail  \$(/bin/ls /dev/md?)|/bin/mail -s "RAID status of $systemname.$Domainname" $mail`;
 
