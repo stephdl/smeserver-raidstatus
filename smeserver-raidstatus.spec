@@ -1,7 +1,7 @@
 Summary: SME server Raidstatus
 %define name smeserver-raidstatus
 Name: %{name}
-%define version 0.2
+%define version 0.3
 %define release 1
 Version: %{version}
 Release: %{release}%{?dist}
@@ -16,9 +16,11 @@ Requires: e-smith-release >= 8.0
 AutoReqProv: no
 
 %changelog
+* Thu Aug 14 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.3-1
+- Added 'mailto' db setting in the server-manager panel
+
 * Thu Jun 05 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.2-1
 - unitialised value $2
-
 * Sat Mar 15 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.1.8
 - a great big thank to walter who have made the new design and corrected a bug i made
 - back of my weekly mail status

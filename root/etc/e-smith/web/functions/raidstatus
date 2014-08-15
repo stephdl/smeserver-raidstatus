@@ -13,8 +13,8 @@ use warnings;
 
 use esmith::FormMagick::Panel::raidstatus;
 
-my $f = esmith::FormMagick::Panel::raidstatus->new();
-$f->display();
+my $fm = esmith::FormMagick::Panel::raidstatus->new();
+$fm->display();
 
 __DATA__
 <form
@@ -22,9 +22,19 @@ __DATA__
         header="/etc/e-smith/web/common/head.tmpl"
 	footer="/etc/e-smith/web/common/foot.tmpl">
  	
-	<page name="First" pre-event="print_status_message()">
+	<page name="First" pre-event="print_status_message()"   post-event="apply()">
 		<description>DESCRIPTION_RAIDSTATUS</description>
         	<subroutine src="print_raidstatus()" />
+
+             <field type="text" id="mailto" size="80">
+                <label>MAILTO</label>
+             value="">
+             <description>DESC_MAILTO</description>
+              <label>MAILTO</label>
+              </field>
+
+ <subroutine src="print_button('SAVE')" />
 	</page>
+
 </form>
 

@@ -68,6 +68,13 @@
         <base>NORAID</base>
         <trans>Vous n'avez pas de raid logiciel.</trans>
     </entry>
-
+    <entry>
+        <base>MAILTO</base>
+        <trans>Destinataire(s)</trans>
+    </entry>
+        <entry>
+        <base>DESC_MAILTO</base>
+        <trans>Un email hebdomadaire de l'état du raid est envoyé à l'administrateur du serveur, vous pouvez ajouter ici d'autres destinataires(séparer les emails par un espace). </trans>
+    </entry>
 
 </lexicon>

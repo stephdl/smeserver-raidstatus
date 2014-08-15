@@ -61,6 +61,13 @@
         <base>NORAID</base>
         <trans>You have no raid.</trans>
     </entry>
-
+    <entry>
+        <base>MAILTO</base>
+        <trans>Recipient (s)</trans>
+    </entry>
+        <entry>
+        <base>DESC_MAILTO</base>
+        <trans>A weekly email of the raid status is sent to the server administrator, you can add here other recipients (separate emails with a space). </trans>
+    </entry>
 
 </lexicon>

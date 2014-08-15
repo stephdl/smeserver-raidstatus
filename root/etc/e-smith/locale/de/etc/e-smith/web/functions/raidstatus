@@ -61,6 +61,14 @@
         <base>NORAID</base>
         <trans>Sie haben kein Raid konfiguriert.</trans>
     </entry>
-
+    <entry>
+        <base>MAILTO</base>
+        <trans>Empfänger (n)</trans>
+    </entry>
+        <entry>
+        <base>DESC_MAILTO</base>
+        <trans>Ein wöchentlicher E-Mail des RAID-Status an den Server Administrator gesendet,
+        Sie können hier hinzufügen andere Empfänger (getrennte E-Mails mit einem Leerzeichen).</trans>
+    </entry>
 
 </lexicon>
