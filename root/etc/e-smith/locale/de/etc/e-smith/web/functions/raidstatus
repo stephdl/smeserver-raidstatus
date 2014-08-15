@@ -67,7 +67,8 @@
     </entry>
         <entry>
         <base>DESC_MAILTO</base>
-        <trans>Ein wöchentlicher E-Mail über den Status des Überfalls auf den Server Administrator gesendet werden, können Sie hier hinzufügen, andere Empfänger (getrennte E-Mails mit einem Leerzeichen). </trans>
+        <trans>Ein wöchentlicher E-Mail des RAID-Status an den Server Administrator gesendet,
+        Sie können hier hinzufügen andere Empfänger (getrennte E-Mails mit einem Leerzeichen).</trans>
     </entry>
 
 </lexicon>
