@@ -10,5 +10,5 @@ my $mail = $DB->get_prop('raidstatus','mailto') || '';
 
 my $systemname = $DB->get_value('SystemName');
 $mail = $mail . ' admin@'.$Domainname;
-my $MailStatus = `/sbin/mdadm --detail  \$(/bin/ls /dev/md?)|/bin/mail -s "RAID status of $systemname.$Domainname" $mail`;
+my $MailStatus = `/sbin/mdadm --detail  \$(/bin/ls /dev/md[123456789])|/bin/mail -s "RAID status of $systemname.$Domainname" $mail`;
 
