@@ -16,6 +16,9 @@ Requires: e-smith-release >= 8.0
 AutoReqProv: no
 
 %changelog
+* Sun Nov 2 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.3-2
+- Removed the test of md0 for sme8
+
 * Thu Aug 14 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.3-1
 - Added 'mailto' db setting in the server-manager panel
 
