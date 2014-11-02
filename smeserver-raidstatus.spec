@@ -1,7 +1,10 @@
 Summary: SME server Raidstatus
-Name: smeserver-raidstatus
-Version: 0.3
-Release: 2%{?dist}
+%define name smeserver-raidstatus
+Name: %{name}
+%define version 0.3
+%define release 1
+Version: %{version}
+Release: %{release}%{?dist}
 License: SWT
 Group: Administration
 Source: %{name}-%{version}.tar.gz
@@ -13,9 +16,6 @@ Requires: e-smith-release >= 8.0
 AutoReqProv: no
 
 %changelog
-* Sun Nov 2 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.3-2
-- Removed the test of md0 for sme8
-
 * Thu Aug 14 2014 Stephane de Labrusse <stephdl@de-labrusse.fr> 0.3-1
 - Added 'mailto' db setting in the server-manager panel
 
